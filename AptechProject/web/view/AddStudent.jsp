@@ -237,7 +237,7 @@
                     </div>
                         <br>
                         <center>
-                    <button type="button" class="btn btn-primary pull-center sub">Add Student</button>
+                    <button type="button" class="btn btn-primary pull-center sub">Add Farmer</button>
                         </center>
                     <div class="clearfix"></div>
                   </form>
