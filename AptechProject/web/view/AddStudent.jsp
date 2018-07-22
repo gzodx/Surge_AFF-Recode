@@ -15,7 +15,7 @@
   <link rel="icon" type="image/png" href="../bootstrap/img/favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    Add Farmers | Afex Admin
+    Add Student | Aptech Admin
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
@@ -38,7 +38,7 @@
     -->
       <div class="logo">
         <a href="http://www.creative-tim.com" class="simple-text logo-normal">
-          Afex Admin
+          Aptech Admin
         </a>
       </div>
       <div class="sidebar-wrapper">
@@ -52,26 +52,31 @@
           <li class="nav-item active">
             <a class="nav-link" href="./AddStudent.jsp">
               <i class="material-icons">person</i>
-              <p>Add Farmer</p>
+              <p>Add student</p>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./ViewStudent.jsp">
               <i class="fa fa-eye"></i>
-              <p>View Farmers</p>
+              <p>View student</p>
             </a>
           </li>
-         
+          <li class="nav-item ">
+            <a class="nav-link" href="./Billing.jsp">
+              <i class="fa fa-bitcoin"></i>
+              <p>Billing</p>
+            </a>
+          </li>
           <li class="nav-item ">
             <a class="nav-link" href="./Enquiries.jsp">
               <i class="fa fa-fax"></i>
-              <p>Add Extention Workers</p>
+              <p>Enquiries</p>
             </a>
           </li>
           <li class="nav-item ">
             <a class="nav-link" href="./EmailStudent.jsp">
               <i class="material-icons">message</i>
-              <p>message farmer</p>
+              <p>Email student</p>
             </a>
           </li>
           <li class="nav-item ">
@@ -95,7 +100,7 @@
         <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
             <div class="container-fluid">
             <div class="navbar-wrapper">
-            <a class="navbar-brand" href="#pablo">Add Farmer</a>
+            <a class="navbar-brand" href="#pablo">Add Student</a>
           </div>
                 <%@include file="Navbar.jsp" %>
             </div>
@@ -107,21 +112,21 @@
             <div class="col-md-8">
               <div class="card">
                 <div class="card-header card-header-primary">
-                  <h4 class="card-title">Farmers Form</h4>
-                  <p class="card-category">Farmers inquiry Form</p>
+                  <h4 class="card-title">Student Form</h4>
+                  <p class="card-category">Student inquiry Form</p>
                   <span id="alert"></span>
                 </div>
                 <div class="card-body">
                     <form class="myform">
                     <div class="row">
-                      <div class="col-md-4">
+                      <div class="col-md-5">
                         <div class="form-group">
                           <label class="bmd-label-floating">First name</label>
                           <input type="text" class="form-control firstname" required name="firstname">
                           
                         </div>
                       </div>
-                      <div class="col-md-4">
+                      <div class="col-md-3">
                         <div class="form-group">
                           <label class="bmd-label-floating">Middle Name</label>
                           <input type="text" class="form-control middlename" required name="middlename">
@@ -137,111 +142,32 @@
                       </div>
                     </div>
                     <div class="row">
-                      <div class="col-md-4">
+                      <div class="col-md-6">
                         <div class="form-group">
                           <label class="bmd-label-floating ">Email Address </label>
                           <input type="email" class="form-control fa fa-bullseye emailaddress" required name="emailaddress">
                         </div>
                       </div>
-                      <div class="col-md-4">
+                      <div class="col-md-6">
                         <div class="form-group">
                           <label class="bmd-label-floating">Mobile Number</label>
                           <input type="tel" pattern="[0-9]*" class="form-control mobilenumber" required name="mobilenumber">
                         </div>
                       </div>
-                        <div class="col-md-4">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">Village</label>
-                          <input type="tel" pattern="[0-9]*" class="form-control village" required name="village">
-                        </div>
-                      </div>
                     </div>
                     <div class="row">
-                      <div class="col-md-5">
+                      <div class="col-md-12">
                         <div class="form-group">
                           <label class="bmd-label-floating">Home Address (+ residence no)</label>
                           <input type="text" class="form-control HomeAddress" required name="HomeAddress">
                         </div>
                       </div>
-                        
-                        <div class="col-md-4">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">Farm Address</label>
-                          <input type="text" class="form-control FarmAddress" required name="farmAddress">
-                        </div>
-                      </div>
-                        
-                        <div class="col-md-3">
-                        <div class="form-group">
-                          <select class="form-control Course" name="MaritalStatus">
-                                        <option>Marital Status</option>
-                                        <option value="Single">Single</option>
-                                        <option value="Married">Married</option>
-                                        <option value="NotSay">NotSay</option>
-                                    </select> 
-                        </div>
-                      </div>
                     </div>
-                         <div class="row">
-                      <div class="col-md-5">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">Sate of origin</label>
-                          <input type="text" class="form-control StateOfOrigin" required name="StateOfOrigin">
-                        </div>
-                      </div>
-                        
-                        <div class="col-md-4">
-                         <select class="form-control Course" name="MaritalStatus">
-                                        <option>Farmer's Crop</option>
-                                        <option value="Soyabean">Soyabean</option>
-                                        <option value="legume">legume</option>
-                                        <option value="Millet">Millet</option>
-                                        <option value="Maze">Maze</option>
-                                        <option value="Beans">Beans</option>
-                                        <option value="Rice">Rice</option>
-                                    </select> 
-                      </div>
-                        
-                        <div class="col-md-3">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">Farm Land Size</label>
-                          <input type="text" class="form-control FarmLandSize" required name="FarmLandSize">
-                        </div>
-                      </div>
-                    </div>
-                        
-                        <div class="row">
-                      <div class="col-md-4">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">Name of Next of Kin</label>
-                          <input type="text" class="form-control NameofNextOfKin" required name="NameofNextOfKin">
-                        </div>
-                      </div>
-                        
-                        <div class="col-md-4">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">Address of Next of Kin</label>
-                          <input type="text" class="form-control AddresssOfKin" required name="AddresssOfKin">
-                        </div>
-                      </div>
-                        
-                        <div class="col-md-4">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">Relationship with Next of Kin</label>
-                          <input type="text" class="form-control RelOfNextOfKin" required name="RelasionshipOfNextOfKin">
-                        </div>
-                      </div>
-                    </div>
-                        
                     <div class="row">
                       <div class="col-md-4">
-                         <div class="form-group">
-                          <select class="form-control Course" name="Course">
-                                        <option>Means of Identification</option>
-                                        <option value="National ID">National ID</option>
-                                        <option value="Voters card">Voters card</option>
-                                        <option value="Afex Farmers Card">Afex Farmers Card</option>
-                                    </select> 
+                        <div class="form-group">
+                          <label class="bmd-label-floating">City</label>
+                          <input type="text" class="form-control city" required name="city">
                         </div>
                       </div>
                       <div class="col-md-4">
@@ -252,13 +178,11 @@
                       </div>
                       <div class="col-md-4">
                         <div class="form-group">
-                          <label class="bmd-label-floating">Agric Services</label>
-                          <input type="text" class="form-control enroll" required name="enroll">
+                          <label class="">Date of enroll</label>
+                          <input type="date" class="form-control enroll" required name="enroll">
                         </div>
                       </div>
-                    </div>
-                    
-                        <div class="row">
+                        
                         <div class="col-md-3">
                             
                         <div class="form-group">
@@ -277,8 +201,8 @@
                         
                          <div class="col-md-4">
                         <div class="form-group">
-                          <label class="bmd-label-floating">Bank Name</label>
-                          <input type="text" class="form-control form-control-plaintext billings">
+                          <label class="bmd-label-floating">Billings</label>
+                          <input type="text" class="form-control form-control-plaintext billings" readonly name="billings">
                         </div>
                       </div>
                         
@@ -293,29 +217,21 @@
                         </div>
                       </div>
                         
-                        <div class="row">
-                            
-                              <div class="col-md-5 ">
+                        <div class="col-md-12 "style="border:1px solid lightgray">
+                            <div class="row">
+                                <div class="col-md-6 depo">
+                                    <center>
+                                        <i class="material-icons white-text " style="font-size: 70px;">attach_money</i>
+                                    </center>
+                                </div>
+                              <div class="col-md-6 ">
                               <div class="form-group">
-                             <label class="bmd-label-floating">Account Number </label>
-                             <input type="text" class="form-control AccountNumber" name="AccountNumber">
+                             <label class="bmd-label-floating">Initial Deposit</label>
+                             <input type="text" class="form-control initialdeposit" required name="initialdeposit">
                                </div>
                                 </div>
-                            <div class="col-md-4 ">
-                              <div class="form-group">
-                             <label class="bmd-label-floating">Account Name</label>
-                             <input type="text" class="form-control AccountName" name="AccountName">
-                               </div>
-                                </div>
-                            
-                            <div class="col-md-4 ">
-                              <div class="form-group">
-                             <label class="bmd-label-floating">Account Status</label>
-                             <input type="text" class="form-control AccountStatus" name="AccountStatus">
-                               </div>
-                                </div>
-                          
-                  
+                            </div>
+                        
                       </div>
                         
                     </div>
@@ -330,17 +246,18 @@
             </div>
             <div class="col-md-4">
               <div class="card card-profile">
-                  <div class="card-body">
-                      <div class="" style="border:2px dotted  black">
-                          <br>
-                          <br>
-                          <h4 class="text-center pull-center">Insert Photo Here</h4>
-                          <br>
-                      </div>
-<!--                      <center>
-                      <input type="file" name="file">
-                      </center>-->
-                  </div>
+                <div class="card-avatar">
+                  <a href="ViewStudent.jsp">
+                    <img class="img" src="../bootstrap/avatar.jpg"/>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-category text-gray">CEO / Co-Founder</h6>
+                  <h4 class="card-title">Alec Thompson</h4>
+                  <p class="card-description">
+                    Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...
+                  </p>
+                  <a href="ViewStudent.jsp" class="btn btn-primary btn-round">View</a>
                 </div>
               </div>
             </div>
